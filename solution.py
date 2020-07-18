@@ -8,7 +8,7 @@ def predict(data):
     """ get two colums from `df` and returns the predicted ouput as a column (pd.Series)
     TODO: modify it
     """
-    result = data['col1'] - data['col2']
+    result = data['col1'] + data['col2']
     return result
 
 
@@ -25,7 +25,7 @@ def main(input_dir, output_dir):
         index=False,
         header=False)
 
-
+#print ("huy")
 if __name__ == "__main__":
     assert len(sys.argv) >= 3, f"Invalid number of arguments: {len(sys.argv)}"
     main(sys.argv[1], sys.argv[2])
